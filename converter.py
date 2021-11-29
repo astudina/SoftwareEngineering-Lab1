@@ -3,14 +3,14 @@ def convertor(temperature):
 
     if len(temperature) != 2:
         print("You should write two arguments")
-        quit()
+        exit()
     else:
         try:
             degree = int(temperature[0])
             unit = temperature[1]
         except ValueError:
             print("Incorrect input")
-            quit()
+            exit()
 
     if unit.upper() == "C":
         res_degree = int(round((9 * degree) / 5 + 32))
@@ -20,7 +20,7 @@ def convertor(temperature):
         res_unit = "Celsius"
     else:
         print("Incorrect measurement unit")
-        quit()
+        exit()
     print("The temperature in", res_unit, "is", res_degree, "degrees.")
 
 
