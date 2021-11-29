@@ -5,8 +5,12 @@ def converter(temperature):
         print("You should write two arguments")
         exit()
     else:
-        degree = int(temperature[0])
-        unit = temperature[1]
+        try:
+            degree = int(temperature[0])
+            unit = temperature[1]
+        except ValueError:
+            print("Incorrect input")
+            exit()
 
     if unit.upper() == "F":
         res_degree = int(round((degree - 32) * 5 / 9))
