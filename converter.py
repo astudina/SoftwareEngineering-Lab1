@@ -1,4 +1,4 @@
-def converter(temperature):
+def convertor(temperature):
     temperature = temperature.split(" ")
 
     if len(temperature) != 2:
@@ -12,14 +12,17 @@ def converter(temperature):
             print("Incorrect input")
             exit()
 
-    if unit.upper() == "F":
+    if unit.upper() == "C":
+        res_degree = int(round((9 * degree) / 5 + 32))
+        res_unit = "Fahrenheit"
+    elif unit.upper() == "F":
         res_degree = int(round((degree - 32) * 5 / 9))
         res_unit = "Celsius"
     else:
         print("Incorrect measurement unit")
         exit()
-    print("The temperature in", res_unit, "is", res_degree, "degrees")
+    print("The temperature in", res_unit, "is", res_degree, "degrees.")
 
 
-temp = input("Enter the temperature you want to convert from Fahrenheit to Celsius (e.g. 12 F or 24 F): ")
-converter(temp)
+temp = input("Enter the temperature you want to convert (e.g. 12 F or 24 C): ")
+convertor(temp)
