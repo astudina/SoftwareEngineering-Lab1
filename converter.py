@@ -17,7 +17,7 @@ def converter(temperature):
         res_unit = "Celsius"
     else:
         print("Incorrect measurement unit")
-        exit(0)
+        exit()
     print("The temperature in", res_unit, "is", res_degree, "degrees")
 
 
