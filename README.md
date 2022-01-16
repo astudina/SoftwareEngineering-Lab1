@@ -1,5 +1,7 @@
 **Лабораторная работа №1**
 
+[![Python application](https://github.com/astudina/SoftwareEngineering-Lab1/actions/workflows/main.yml/badge.svg)](https://github.com/astudina/SoftwareEngineering-Lab1/actions/workflows/main.yml)
+
 В ходе первой лабораторной работы был написан конвертер градусов Цельсия в градусы Фаренгейта и наоборот. \
 Примеры работы программы: 
 - Из Фаренгейта в Цельсия \
